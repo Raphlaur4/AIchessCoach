@@ -51,4 +51,4 @@ src/aichesscoach/
 
 ## Author
 
-Raphael Laurent — data engineer pivoting toward AI engineering. [@Raphlaur4](https://github.com/Raphlaur4)
+Raphael Laurent — [@Raphlaur4](https://github.com/Raphlaur4)
