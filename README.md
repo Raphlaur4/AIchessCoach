@@ -38,6 +38,37 @@ Work in progress. Built step by step — the [commit history](https://github.com
 | Tool protocol | MCP (Model Context Protocol) |
 | CLI | [Typer](https://typer.tiangolo.com/) |
 
+## Installation
+
+Prerequisites: Python 3.11+ and [`uv`](https://github.com/astral-sh/uv).
+
+```bash
+git clone https://github.com/Raphlaur4/AIchessCoach.git
+cd AIchessCoach
+uv sync
+```
+
+Stockfish is required for position evaluation and is not committed to the repo.
+
+**Windows:**
+
+```powershell
+powershell -ExecutionPolicy Bypass -File scripts/install_stockfish.ps1
+```
+
+**macOS / Linux:**
+
+```bash
+brew install stockfish       # macOS
+sudo apt install stockfish   # Debian/Ubuntu
+```
+
+Run the test suite to confirm everything is wired up:
+
+```bash
+uv run pytest
+```
+
 ## Planned architecture
 
 ```
