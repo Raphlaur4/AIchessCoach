@@ -64,8 +64,8 @@ This is a showcase, not a product:
 | 2 | PGN parsing with `python-chess` | done — `6502566` |
 | 3 | Stockfish integration for position evaluation | done — `c162204` |
 | 4 | Detect key moments (blunders, brilliant moves, turning points) | done — `b3aab1e` |
-| 5 | MCP server exposing chess analysis tools | next |
-| 6 | Claude Skills — skill-level-aware coaching | planned |
+| 5 | MCP server exposing chess analysis tools | done — `d9982cf` |
+| 6 | Claude Skills — skill-level-aware coaching | next |
 | 7 | Agentic loop with Claude Agent SDK | planned |
 | 8 | Typer CLI | planned |
 | 9 | Polish README with architecture diagram + demo | planned |
