@@ -69,6 +69,38 @@ Run the test suite to confirm everything is wired up:
 uv run pytest
 ```
 
+## MCP server
+
+The chess analysis tools are exposed as an [MCP](https://modelcontextprotocol.io/) server, so any MCP-compatible client (Claude Desktop, Claude Code, the Agent SDK…) can consume them without touching Stockfish or `python-chess` directly.
+
+Three tools are published:
+
+| Tool | Purpose |
+|---|---|
+| `evaluate_position` | Stockfish evaluation of a single FEN |
+| `parse_pgn` | Headers + move-by-move positions |
+| `analyze_game` | All inaccuracies, mistakes, and blunders in a game |
+
+Run the server over stdio:
+
+```bash
+uv run python -m aichesscoach.mcp_server
+```
+
+To wire it into Claude Desktop, add the following to your `claude_desktop_config.json`:
+
+```json
+{
+  "mcpServers": {
+    "aichesscoach": {
+      "command": "uv",
+      "args": ["run", "python", "-m", "aichesscoach.mcp_server"],
+      "cwd": "/absolute/path/to/AIchessCoach"
+    }
+  }
+}
+```
+
 ## Planned architecture
 
 ```
