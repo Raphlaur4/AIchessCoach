@@ -4,7 +4,7 @@ Guidance for AI assistants working on this repo. Read this first.
 
 ## Mission
 
-**AIchessCoach** is a portfolio project showcasing modern AI engineering primitives: Claude Agent SDK, MCP, Claude Skills, tool use. The goal is to visibly demonstrate these technologies to recruiters through a small, well-structured chess coaching agent — not to build a production chess trainer.
+**AIchessCoach** is a portfolio project showcasing modern AI engineering primitives: Claude Agent SDK, MCP, Claude Skills, tool use. The goal is to visibly demonstrate these technologies through a small, well-structured chess coaching agent — not to build a production chess trainer.
 
 Optimize for clarity and showcase value over depth.
 
