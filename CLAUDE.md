@@ -15,6 +15,11 @@ Optimize for clarity and showcase value over depth.
 - Run tests with `uv run pytest`.
 - `uv.lock` is committed for reproducibility.
 
+## Language
+
+- Conversation with the user is in **French**.
+- Everything written to the repo — code, docs, commit messages, file contents — is in **English**.
+
 ## Commit conventions
 
 - **Conventional Commits**: `feat:`, `fix:`, `chore:`, `docs:`, `refactor:`, `test:`.
