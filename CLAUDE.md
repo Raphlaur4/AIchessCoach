@@ -35,9 +35,9 @@ Optimize for clarity and showcase value over depth.
 ```
 src/aichesscoach/
 ├── parser/      # PGN and FEN parsing
-├── analyzer/    # key-moment detection using Stockfish        (planned)
-├── mcp_server/  # MCP server exposing chess analysis tools    (planned)
-├── skills/      # Claude Skills — coaching per player level   (planned)
+├── analyzer/    # key-moment detection using Stockfish
+├── mcp_server/  # MCP server exposing chess analysis tools
+├── skills/      # Claude Skills — coaching per player level
 ├── agent/       # agentic orchestration with Claude Agent SDK (planned)
 └── cli.py       # Typer CLI                                   (planned)
 tests/           # pytest — mirrors the src tree
