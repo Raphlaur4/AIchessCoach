@@ -101,15 +101,16 @@ To wire it into Claude Desktop, add the following to your `claude_desktop_config
 }
 ```
 
-## Planned architecture
+## Architecture
 
 ```
 src/aichesscoach/
+├── parser/          # PGN parsing
 ├── analyzer/        # key-moment detection using Stockfish
 ├── mcp_server/      # MCP server exposing chess analysis tools
 ├── skills/          # Claude Skills — coaching style per player level
-├── agent/           # agentic orchestration with Claude Agent SDK
-└── cli.py           # user-facing CLI (Typer)
+├── agent/           # agentic orchestration with Claude Agent SDK (planned)
+└── cli.py           # user-facing CLI (Typer)                     (planned)
 ```
 
 ## Author
