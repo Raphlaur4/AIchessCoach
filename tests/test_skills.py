@@ -6,7 +6,7 @@ from pathlib import Path
 import pytest
 import yaml
 
-SKILLS_DIR = Path(__file__).resolve().parents[1] / "src" / "aichesscoach" / "skills"
+SKILLS_DIR = Path(__file__).resolve().parents[1] / ".claude" / "skills"
 
 
 def _skill_dirs() -> list[Path]:

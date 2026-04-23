@@ -108,10 +108,13 @@ src/aichesscoach/
 ├── parser/          # PGN parsing
 ├── analyzer/        # key-moment detection using Stockfish
 ├── mcp_server/      # MCP server exposing chess analysis tools
-├── skills/          # Claude Skills — coaching style per player level
 ├── agent/           # agentic orchestration with Claude Agent SDK (planned)
 └── cli.py           # user-facing CLI (Typer)                     (planned)
+.claude/
+└── skills/          # Claude Skills — coaching style per player level
 ```
+
+Skills live under `.claude/skills/` because that is the convention the Claude Agent SDK uses to auto-discover project-scoped skills.
 
 ## Author
 

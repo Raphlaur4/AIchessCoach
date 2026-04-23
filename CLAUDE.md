@@ -37,14 +37,15 @@ src/aichesscoach/
 ├── parser/      # PGN and FEN parsing
 ├── analyzer/    # key-moment detection using Stockfish
 ├── mcp_server/  # MCP server exposing chess analysis tools
-├── skills/      # Claude Skills — coaching per player level
 ├── agent/       # agentic orchestration with Claude Agent SDK (planned)
 └── cli.py       # Typer CLI                                   (planned)
+.claude/
+└── skills/      # Claude Skills — coaching per player level (discovered by the Agent SDK)
 tests/           # pytest — mirrors the src tree
 examples/        # sample PGNs and demo outputs
 ```
 
-The `src/` layout is intentional — avoids import shadowing.
+The `src/` layout is intentional — avoids import shadowing. Skills live under `.claude/skills/` because that is the standard path the Claude Agent SDK (and Claude Code itself) discover for project-scoped skills.
 
 ## Testing
 
