@@ -101,6 +101,29 @@ To wire it into Claude Desktop, add the following to your `claude_desktop_config
 }
 ```
 
+## Agent
+
+The agentic loop is built on the [Claude Agent SDK](https://github.com/anthropics/claude-agent-sdk-python). It wires the in-process MCP server (chess analysis tools) and the project-scoped Claude Skills (coaching style per level) into a single async entry point.
+
+```python
+import asyncio
+from aichesscoach.agent import analyze_game
+
+pgn = open("mygame.pgn").read()
+coaching = asyncio.run(analyze_game(pgn, level="beginner"))
+print(coaching)
+```
+
+**Prerequisites:**
+
+- `ANTHROPIC_API_KEY` environment variable set.
+- [Claude Code CLI](https://docs.claude.com/en/docs/claude-code) installed and on `PATH` (the SDK wraps it).
+
+Flow for each call:
+1. The agent loads the skill matching the requested level from `.claude/skills/`.
+2. Claude is given the PGN and may call `evaluate_position`, `parse_pgn`, or `analyze_game` as many times as needed.
+3. The coaching text produced by the model is returned as a single string.
+
 ## Architecture
 
 ```
@@ -108,7 +131,7 @@ src/aichesscoach/
 ├── parser/          # PGN parsing
 ├── analyzer/        # key-moment detection using Stockfish
 ├── mcp_server/      # MCP server exposing chess analysis tools
-├── agent/           # agentic orchestration with Claude Agent SDK (planned)
+├── agent/           # agentic orchestration with Claude Agent SDK
 └── cli.py           # user-facing CLI (Typer)                     (planned)
 .claude/
 └── skills/          # Claude Skills — coaching style per player level
