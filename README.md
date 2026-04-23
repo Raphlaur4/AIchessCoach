@@ -124,6 +124,21 @@ Flow for each call:
 2. Claude is given the PGN and may call `evaluate_position`, `parse_pgn`, or `analyze_game` as many times as needed.
 3. The coaching text produced by the model is returned as a single string.
 
+## CLI
+
+A [Typer](https://typer.tiangolo.com/) CLI wraps the agent for terminal use.
+
+```bash
+uv run aichesscoach analyze path/to/game.pgn --level beginner
+```
+
+Options:
+
+- `--level [beginner|intermediate|advanced]` — selects the coaching skill (default: `intermediate`).
+- `--help` — show usage, available commands, and option details.
+
+The CLI requires the same prerequisites as the agent (`ANTHROPIC_API_KEY` or a logged-in Claude Code session, plus Stockfish for the underlying analysis tools).
+
 ## Architecture
 
 ```
@@ -132,7 +147,7 @@ src/aichesscoach/
 ├── analyzer/        # key-moment detection using Stockfish
 ├── mcp_server/      # MCP server exposing chess analysis tools
 ├── agent/           # agentic orchestration with Claude Agent SDK
-└── cli.py           # user-facing CLI (Typer)                     (planned)
+└── cli.py           # user-facing CLI (Typer)
 .claude/
 └── skills/          # Claude Skills — coaching style per player level
 ```

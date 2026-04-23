@@ -20,10 +20,14 @@ dependencies = [
     "chess>=1.11.2",
     "claude-agent-sdk>=0.1.65",
     "mcp>=1.27.0",
+    "typer>=0.24.2",
 ]
 
 [project.urls]
 Repository = "https://github.com/Raphlaur4/AIchessCoach"
+
+[project.scripts]
+aichesscoach = "aichesscoach.cli:app"
 
 [build-system]
 requires = ["hatchling"]
