@@ -7,7 +7,6 @@ consumes quota.
 from __future__ import annotations
 
 import os
-import shutil
 
 import pytest
 
@@ -19,10 +18,6 @@ pytestmark = [
     pytest.mark.skipif(
         not os.environ.get("ANTHROPIC_API_KEY"),
         reason="ANTHROPIC_API_KEY is not set",
-    ),
-    pytest.mark.skipif(
-        shutil.which("claude") is None,
-        reason="Claude Code CLI (`claude`) is not on PATH",
     ),
     pytest.mark.skipif(
         find_stockfish() is None,
