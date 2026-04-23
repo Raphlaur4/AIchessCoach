@@ -38,7 +38,7 @@ src/aichesscoach/
 ├── analyzer/    # key-moment detection using Stockfish
 ├── mcp_server/  # MCP server exposing chess analysis tools
 ├── agent/       # agentic orchestration with Claude Agent SDK
-└── cli.py       # Typer CLI                                   (planned)
+└── cli.py       # Typer CLI
 .claude/
 └── skills/      # Claude Skills — coaching per player level (discovered by the Agent SDK)
 tests/           # pytest — mirrors the src tree
@@ -73,8 +73,8 @@ This is a showcase, not a product:
 | 5 | MCP server exposing chess analysis tools | done — `d9982cf` |
 | 6 | Claude Skills — skill-level-aware coaching | done — `7c8068a` |
 | 7 | Agentic loop with Claude Agent SDK | done — `56cb581` |
-| 8 | Typer CLI | next |
-| 9 | Polish README with architecture diagram + demo | planned |
+| 8 | Typer CLI | done — `e70581b` |
+| 9 | Polish README with architecture diagram + demo | next |
 | 10 | Examples and sample outputs | planned |
 
 When resuming work: check `git log --oneline` to confirm which steps are done, then continue at the next "next" entry.
