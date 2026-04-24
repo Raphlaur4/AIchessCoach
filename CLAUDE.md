@@ -74,7 +74,7 @@ This is a showcase, not a product:
 | 6 | Claude Skills — skill-level-aware coaching | done — `7c8068a` |
 | 7 | Agentic loop with Claude Agent SDK | done — `56cb581` |
 | 8 | Typer CLI | done — `e70581b` |
-| 9 | Polish README with architecture diagram + demo | next |
-| 10 | Examples and sample outputs | planned |
+| 9 | Polish README with architecture diagram + demo | done — `a14eb0a` |
+| 10 | Examples and sample outputs | next |
 
 When resuming work: check `git log --oneline` to confirm which steps are done, then continue at the next "next" entry.
