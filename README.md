@@ -31,41 +31,51 @@ uv run aichesscoach analyze fools_mate.pgn --level beginner
 <details>
 <summary>Click to expand the full coaching output</summary>
 
-### 🎓 Analyse de ta partie — Le Fool's Mate (Mat du Fou)
-
-Tu viens de vivre quelque chose d'assez rare : **le mat le plus rapide possible aux échecs**, en seulement 2 coups ! C'est le moment idéal pour comprendre pourquoi ça s'est passé. 😊
+Here's your coaching breakdown! 🎓
 
 ---
 
-#### ⚠️ Coup 1 — `f3` (Erreur)
+### Game Overview: The Fool's Mate
 
-**Ce qui s'est passé :** Le pion en f3 ne développe aucune pièce et n'aide pas à contrôler le centre.
-
-**Pourquoi c'est risqué :** Ce pion ouvre en partie la **diagonale e1–h4**, qui mène directement à ton roi. À ce stade, ce n'est pas encore fatal — mais c'est une première fissure dans la sécurité du roi.
-
-**À retenir :** Au début d'une partie, essaie de jouer des coups qui *développent* tes pièces (cavaliers, fous) ou qui contrôlent le centre avec les pions e4 ou d4.
+You just experienced the **Fool's Mate** — the fastest checkmate possible in chess (only 2 moves for White!). It's a painful lesson, but an incredibly important one. Let's look at exactly what went wrong.
 
 ---
 
-#### 🚨 Coup 3 — `g4` (**Blunder** — erreur fatale)
+#### ⚠️ Move 1 — **f3** (Mistake)
 
-**Ce qui s'est passé :** La dame noire a joué `Qh4#` — **échec et mat !** La partie est terminée en 2 coups.
+**What happened:** White moved the f-pawn forward one square. This looks harmless, but it actually *weakens the king's safety* right away.
 
-**Pourquoi ça s'est produit :** En jouant g4, tu as complètement ouvert la diagonale e1–h4. La dame adverse a pu s'y engouffrer d'un seul coup, attaquant le roi que *rien* ne protégeait sur cette ligne.
+**Why it's a problem:** Imagine an invisible diagonal line stretching from e1 (where your king starts) all the way to h4. Moving the f-pawn unblocks that diagonal, meaning your king is now exposed to attacks from that direction.
 
-**À retenir :** Avant de déplacer les pions f et g, demande-toi toujours : *"Est-ce que j'expose une route vers mon roi ?"* Ces deux pions sont les gardes du corps du roi — les écarter tous les deux en deux coups, c'est le laisser sans défense.
+**What to look for next time:** Before moving a pawn in front of your king, ask yourself: *"Does this open a line toward my king?"* Pawns protecting the king are valuable shields — don't move them without a good reason.
 
 ---
 
-#### 💡 La leçon principale
+#### 💀 Move 2 — **g4** (Blunder → Instant Checkmate)
 
-> **La sécurité du roi passe avant tout.** Les pions f et g forment un bouclier naturel devant ton roi. Les avancer en début de partie, surtout sans raison tactique, c'est inviter l'adversaire à attaquer.
+**What happened:** White moved the g-pawn forward, and Black immediately played **Qh4#** — checkmate. Game over.
 
-Ne te décourage pas — même les grands joueurs ont un jour perdu vite. L'important, c'est de comprendre *pourquoi* ! Tu veux analyser une autre partie ? 🏆
+**Why it's a problem:** The g4 move *completely opened* the diagonal toward your king. The Black queen swooped to h4, and there was no way to block her or capture her. Your king was checkmated on move 2.
+
+**What to look for next time:** Be very careful about moving the f- and g-pawns early in the game. These two pawns are your king's closest bodyguards. Moving both of them creates a gaping hole right in front of your king.
+
+---
+
+#### 🔑 The Big Lesson: King Safety Comes First
+
+In the opening (the first several moves of a game), your **#1 priority** is to keep your king safe. Here's a simple rule to remember:
+
+> **Don't move the pawns directly in front of your king unless you have a very good reason.**
+
+A better plan for White would have been to open up the center (moves like **e4** or **d4**), develop pieces (bring out knights and bishops), and look to castle — which tucks the king safely behind a wall of pawns.
+
+---
+
+You won't fall for this one twice! Every chess player gets hit by the Fool's Mate at least once — now you're in the club. 😄 Want to play through a better opening together?
 
 </details>
 
-By default the agent matches the user's locale, which is why this sample is in French. Swap the system prompt (or export `LANG=en_US`) to get English output.
+By default the agent matches the user's language, so you can prompt and read it in your own. The sample above was captured by asking explicitly for English.
 
 ## Architecture
 
