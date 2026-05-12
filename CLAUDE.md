@@ -75,6 +75,6 @@ This is a showcase, not a product:
 | 7 | Agentic loop with Claude Agent SDK | done — `56cb581` |
 | 8 | Typer CLI | done — `e70581b` |
 | 9 | Polish README with architecture diagram + demo | done — `a14eb0a` |
-| 10 | Examples and sample outputs | next |
+| 10 | Examples and sample outputs | done — `d77730b` |
 
 When resuming work: check `git log --oneline` to confirm which steps are done, then continue at the next "next" entry.
