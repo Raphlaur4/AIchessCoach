@@ -77,6 +77,8 @@ You won't fall for this one twice! Every chess player gets hit by the Fool's Mat
 
 By default the agent matches the user's language, so you can prompt and read it in your own. The sample above was captured by asking explicitly for English.
 
+More sample games with coaching outputs (including [Morphy's Opera Game](examples/morphy_opera_game_output.md) at the advanced level) are in [`examples/`](examples/).
+
 ## Architecture
 
 ```mermaid
